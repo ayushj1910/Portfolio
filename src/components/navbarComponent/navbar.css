@@ -1,0 +1,29 @@
+.bg-nav{
+    background-color: #17183b;
+  }
+  
+  .navlink-color{
+    color: whitesmoke;
+    padding: 0.5rem  ;
+    font-size: .875rem;
+      line-height:2;
+      letter-spacing: .02857em;
+      
+  }
+   .navlink-color:hover{
+    color:whitesmoke;
+    background-color:#151636;
+    transition:  background-color 0.3s linear;
+    text-decoration: none ;
+  }
+  .fixed-bottom{
+    background-color: #f8f9fa;
+  }
+   .bottom-nav-links{
+    color:  rgba(38,84,124,.3);
+      text-align: center;
+      font-size: 22px;
+      display: block;
+      padding: .5rem 1rem;
+  
+  }
