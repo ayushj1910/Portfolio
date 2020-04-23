@@ -24,7 +24,7 @@ class  App extends React.Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/Skills" component={Skills} />
-              <Route path="/Portfolio" component={Portfolio} />
+              <Route path="/portfolio" component={Portfolio} />
               {/* <Route path="/policy" component={ Policy} /> */}
               
               <Route component={NoMatch} />
