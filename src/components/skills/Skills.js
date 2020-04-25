@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import './skills.css'
 import $ from  'jquery'
 import 'easy-pie-chart/dist/jquery.easypiechart'
-import { DiJqueryLogo } from 'react-icons/di';
+import { DiJqueryLogo,DiMongodb,DiMysql } from 'react-icons/di';
 import { FaHtml5,FaCss3Alt,FaBootstrap,FaReact,FaNode,FaGitAlt, FaGithub, FaInstagram, FaTwitter,FaFacebookF, FaLinkedin} from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import {  Button,Jumbotron } from 'reactstrap';
@@ -18,12 +18,11 @@ class Skills extends Component{
             $('.chart').easyPieChart({
                 barColor: '#6C63FF',
     	   size: '220',
-            easing: 'easeOutBounce',
             scaleLength: 6,
             lineWidth: 8,
             trackColor: "#555555",
 
-            animate: { duration: 5000, enabled: true },
+            animate: { duration: 3000, enabled: true },
 			onStep: function(from, to, percent) {
 				$(this.el).find('.percent').text(Math.round(percent));
 			}
@@ -147,6 +146,33 @@ class Skills extends Component{
                                             </span>
                                                                                        
                                  </div>
+                                 <div class="col-md-6 col-lg-4 text-center">
+                                    <span class="chart" data-percent="50">
+                                            <span class="percent"></span>
+                                                <h5>
+                                                     <div style={{color: '#449B45'}} className="skill-icon">
+                                                         <DiMongodb/>
+                                                      </div>
+                                                                            
+                                                     MongoDB
+                                                </h5>
+                                            </span>
+                                                                                       
+                                 </div>
+                                 <div class="col-md-6 col-lg-4 text-center">
+                                    <span class="chart" data-percent="40">
+                                            <span class="percent"></span>
+                                                <h5>
+                                                     <div style={{color: '#00688F'}} className="skill-icon">
+                                                         <DiMysql/>
+                                                      </div>
+                                                                            
+                                                     Mysql
+                                                </h5>
+                                            </span>
+                                                                                       
+                                 </div>
+
 
                              </div>
                          </div>
